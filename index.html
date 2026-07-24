@@ -377,7 +377,8 @@
         let getMcq = () => { let sel = document.querySelector('input[name="mcq"]:checked'); return sel ? sel.parentNode.innerText.trim() : "Kosong"; };
 
         // Susun 1 block teks rapi untuk dikirim ke Spreadsheet
-        let rekapDetail = 
+       let rekapDetail = 
+            "📋 REKAP JAWABAN SISWA:\n\n" +
             "=== PART A ===\n" +
             "1. Largest radius: " + getVal('qa1') + "\n" +
             "2. Lowest IE: " + getVal('qa2') + "\n" +
